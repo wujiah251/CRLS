@@ -1,0 +1,1 @@
+print(max_i,max)

@@ -1,3 +1,6 @@
+'''
+桶排序
+'''
 
 def insert_sort(A):
     n=len(A)
@@ -12,9 +15,11 @@ def insert_sort(A):
 def buck_sort(A):
     n=len(A)
     B=[[] for i in range(n)]
+
     for i in range(n):
         B[int(n*(A[i]))].append(A[i])
     for i in range(n):
+    
         insert_sort(B[i])
     k=0
     
